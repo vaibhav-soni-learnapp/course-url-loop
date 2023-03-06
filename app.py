@@ -11,7 +11,7 @@ def main():
     st.title("Dynamic Image URLs")
 
     base_url = st.text_input("Enter the base URL:")
-    num_images = st.slider("Number of images:", 1, 50, 10)
+    num_images = st.slider("Number of images:", 1, 500, 20)
 
     if st.button("Generate URLs"):
         image_urls = generate_image_urls(base_url, num_images)
