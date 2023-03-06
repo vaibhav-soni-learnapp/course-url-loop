@@ -3,7 +3,7 @@ import streamlit as st
 def generate_image_urls(base_url, num_images):
     image_urls = []
     for i in range(1, num_images + 1):
-        url = base_url + "(" + str(i) + ")" + ".jpg"
+        url = base_url + "+" + "(" + str(i) + ")" + ".jpg"
         image_urls.append(url)
     return image_urls
 
